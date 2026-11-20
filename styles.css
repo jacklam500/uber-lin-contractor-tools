@@ -1,0 +1,38 @@
+/* Uber Lin Contractor Tools — shared stylesheet. No frameworks, no tracking. */
+:root { --ink: #1c2430; --muted: #5b6675; --accent: #1f6f4a; --accent-dark: #17573a; --line: #e3e7ec; --bg: #ffffff; --soft: #f4f6f3; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; }
+a { color: var(--accent); }
+header.site { border-bottom: 1px solid var(--line); }
+.nav { max-width: 960px; margin: 0 auto; padding: 16px 20px; display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; }
+.brand { font-weight: 700; font-size: 1.1rem; color: var(--ink); text-decoration: none; }
+.brand span { color: var(--accent); }
+nav.links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+nav.links a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+nav.links a:hover { color: var(--ink); text-decoration: underline; }
+main { max-width: 960px; margin: 0 auto; padding: 32px 20px 64px; }
+h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 12px; }
+h2 { font-size: 1.4rem; margin: 32px 0 8px; }
+h3 { font-size: 1.1rem; margin: 24px 0 6px; }
+p { margin: 0 0 14px; }
+.lede { font-size: 1.15rem; color: var(--muted); }
+.hero { background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 28px; margin-bottom: 32px; }
+.button { display: inline-block; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+.button:hover { background: var(--accent-dark); }
+.button.ghost { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.card { border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+.card h3 { margin-top: 0; }
+.price { font-size: 1.5rem; font-weight: 700; }
+.price small { font-size: 0.9rem; color: var(--muted); font-weight: 400; }
+.muted { color: var(--muted); }
+.small { font-size: 0.9rem; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: var(--soft); }
+ul { margin: 0 0 14px; padding-left: 22px; }
+footer.site { border-top: 1px solid var(--line); }
+footer.site .inner { max-width: 960px; margin: 0 auto; padding: 24px 20px; color: var(--muted); font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+footer.site a { color: var(--muted); }
+.note { background: #fff8e6; border: 1px solid #ead9a0; border-radius: 8px; padding: 12px 16px; }
+@media (max-width: 600px) { h1 { font-size: 1.6rem; } main { padding-top: 24px; } }
